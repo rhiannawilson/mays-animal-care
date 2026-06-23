@@ -1,0 +1,28 @@
+.contact {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact-btn {
+  background-color: var(--sage);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
