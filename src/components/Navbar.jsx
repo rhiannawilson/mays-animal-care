@@ -30,12 +30,12 @@ function Navbar() {
           className="collapse navbar-collapse"
           id="navbarNav"
         >
-          <div className="navbar-nav ms-auto">
-            <a className="nav-link" href="#">Home</a>
-            <a className="nav-link" href="#">Services</a>
-            <a className="nav-link" href="#">About</a>
-            <a className="nav-link" href="#">Contact</a>
-          </div>
+        <div className="navbar-nav ms-auto">
+          <a className="nav-link" href="#home">Home</a>
+          <a className="nav-link" href="#services">Services</a>
+          <a className="nav-link" href="#about">About</a>
+          <a className="nav-link" href="#contact">Contact</a>
+        </div>
         </div>
 
       </div>

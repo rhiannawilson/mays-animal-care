@@ -16,3 +16,7 @@ h6 {
   font-family: var(--font-heading);
   color: var(--charcoal);
 }
+
+html {
+  scroll-behavior: smooth;
+}

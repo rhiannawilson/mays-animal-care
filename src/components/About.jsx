@@ -2,8 +2,8 @@ import "../styles/About.css";
 
 function About() {
   return (
-    <section className="about">
-      <div className="container about-content">
+    <section id="about" className="about">
+        <div className="container about-content">
         <h2>Welcome to May's Animal Care</h2>
 
         <p>
