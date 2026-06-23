@@ -1,0 +1,14 @@
+.about {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 1.5rem;
+}
