@@ -9,11 +9,20 @@ function Contact() {
 
         <div className="contact-form">
 
-          <form>
+          <form 
+            name="contact"
+            method="POST"
+            data-netlify="true" >
+          <input
+            type="hidden"
+            name="form-name"
+            value="contact"
+          />
 
             <div className="mb-3">
               <label className="form-label">Name</label>
               <input
+                name="name"
                 type="text"
                 className="form-control"
                 placeholder="Your name"
@@ -23,6 +32,7 @@ function Contact() {
             <div className="mb-3">
               <label className="form-label">Email</label>
               <input
+                name="email"
                 type="email"
                 className="form-control"
                 placeholder="your@email.com"
@@ -32,6 +42,7 @@ function Contact() {
             <div className="mb-3">
               <label className="form-label">Phone</label>
               <input
+                name="phone"
                 type="tel"
                 className="form-control"
                 placeholder="0400 000 000"
@@ -40,17 +51,19 @@ function Contact() {
 
             <div className="mb-3">
               <label className="form-label">Service Required</label>
-              <select className="form-select">
+            <select name="service" className="form-select">                
                 <option>Dog Walking</option>
                 <option>Pet Sitting</option>
                 <option>Puppy Visits</option>
-                <option>Other</option>
+                <option>Dog Training</option>
+                <option>Other</option>  
               </select>
             </div>
 
             <div className="mb-4">
               <label className="form-label">Message</label>
               <textarea
+                name="message"
                 className="form-control"
                 rows="5"
                 placeholder="Tell us a little about your pet and how we can help..."
