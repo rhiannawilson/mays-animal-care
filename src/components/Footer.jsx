@@ -8,7 +8,7 @@ function Footer() {
         <h3>May's Animal Care</h3>
 
         <p>
-          Professional pet care throughout Sydney's Eastern Suburbs.
+          Professional and reliable pet care throughout Sydney's Eastern Suburbs.
         </p>
 
         <p>
