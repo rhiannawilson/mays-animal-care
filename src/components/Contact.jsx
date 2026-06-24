@@ -9,10 +9,12 @@ function Contact() {
 
         <div className="contact-form">
 
-          <form 
-            name="contact"
-            method="POST"
-            data-netlify="true" >
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/success.html"
+        >
           <input
             type="hidden"
             name="form-name"
