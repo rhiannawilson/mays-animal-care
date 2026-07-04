@@ -1,7 +1,7 @@
 import "../styles/Gallery.css";
 
 import edna from "../assets/images/edna.jpg";
-import chocco from "../assets/images/chocco.jpg";
+import chocco from "../assets/images/chocco.jpeg";
 
 function Gallery() {
   return (
