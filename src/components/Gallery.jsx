@@ -7,7 +7,7 @@ function Gallery() {
     <section id="gallery" className="gallery">
       <div className="container">
 
-        <h2>Happy Clients</h2>
+        <h2>Happy Pets</h2>
 
         <p className="gallery-subtitle">
           A few of the wonderful pets I've had the pleasure of caring for.
