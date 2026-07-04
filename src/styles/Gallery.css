@@ -42,9 +42,11 @@
 /* Image */
 
 .gallery-card img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /* Text */
