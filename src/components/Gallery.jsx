@@ -8,7 +8,7 @@ import willowwhiskey from "../assets/images/willowwhiskey.jpeg";
 import bob from "../assets/images/bob.jpeg";
 import mapleswindow from "../assets/images/mapleswindow.jpeg";
 import mittens from "../assets/images/mittens.jpeg";
-import misty from "../assets/images/misty.jpg";
+import misty from "../assets/images/misty.jpeg";
 
 
 function Gallery() {
