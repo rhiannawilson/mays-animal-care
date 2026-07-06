@@ -38,6 +38,13 @@ function Gallery() {
               Balcony pats during a boarding stay at my home.
             </p>
           </div>
+          
+          {/* maples in window */}
+          <div className="gallery-card">
+            <img src={mapleswindow} alt="a cat inside the window" />
+            <h3>Maples</h3>
+            <p>Please don't go!</p>
+          </div>
 
           {/* Mia */}
            <div className="gallery-card">
@@ -66,14 +73,6 @@ function Gallery() {
             <img src={bob} alt="a dog" />
             <h3>Bob</h3>
             <p>Home visit poses</p>
-          </div>
-
-
-          {/* maples in window */}
-          <div className="gallery-card">
-            <img src={mapleswindow} alt="a cat inside the window" />
-            <h3>Maples</h3>
-            <p>Please don't go!</p>
           </div>
 
           {/* mittens */}
