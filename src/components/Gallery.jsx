@@ -2,6 +2,8 @@ import "../styles/Gallery.css";
 
 import edna from "../assets/images/edna.jpg";
 import chocco from "../assets/images/chocco.jpeg";
+import mia from "../assets/images/mia.jpeg";
+import rra from "../assets/images/rra.jpeg";
 
 function Gallery() {
   return (
@@ -27,8 +29,22 @@ function Gallery() {
             <img src={chocco} alt="Chocco the Shih Tzu" />
             <h3>Chocco</h3>
             <p>
-              Enjoying my company on the balcony during a boarding stay at my home.
+              Balcony pats during a boarding stay at my home.
             </p>
+          </div>
+
+          {/* Mia*/}
+           <div className="gallery-card">
+            <img src={mia} alt="Mia the dog" />
+            <h3>Mia</h3>
+            <p>Getting ready to stick her little nose out of the car window, safety first!</p>
+          </div>
+
+          {/* Roger, Rosie and Archer */}
+          <div className="gallery-card">
+            <img src={rra} alt="Roger, Rosie and Archer, three dogs" />
+            <h3>Roger, Rosie and Archer</h3>
+            <p> The Three Musketeers</p>
           </div>
 
         </div>
