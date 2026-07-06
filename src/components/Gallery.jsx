@@ -8,24 +8,23 @@ function Gallery() {
     <section id="gallery" className="gallery">
       <div className="container">
         <h2>Happy Pets</h2>
+
         <p className="gallery-subtitle">
           A few of the wonderful pets I've had the pleasure of caring for.
         </p>
-        {/* Gallery - EDNA */}
+
         <div className="gallery-grid">
+
+          {/* Edna */}
           <div className="gallery-card">
             <img src={edna} alt="Edna the cat" />
             <h3>Edna</h3>
-            <p>
-              Enjoying some sunshine during a home visit.
-            </p>
+            <p>Enjoying some sunshine during a home visit.</p>
           </div>
 
-
-        {/* Gallery - Chocco */}
-        <div className="gallery-grid">
+          {/* Chocco */}
           <div className="gallery-card">
-            <img src={chocco} alt="Chocco the Shitzu" />
+            <img src={chocco} alt="Chocco the Shih Tzu" />
             <h3>Chocco</h3>
             <p>
               Enjoying my company on the balcony during a boarding stay at my home.
@@ -33,8 +32,6 @@ function Gallery() {
           </div>
 
         </div>
-        </div>
-
       </div>
     </section>
   );
