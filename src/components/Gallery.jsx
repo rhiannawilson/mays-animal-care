@@ -3,95 +3,102 @@ import "../styles/Gallery.css";
 import edna from "../assets/images/edna.jpg";
 import chocco from "../assets/images/chocco.jpeg";
 import mia from "../assets/images/mia.jpeg";
-import rra from "../assets/images/rra.jpeg";
+import rogerRosieArcher from "../assets/images/rogerRosieArcher.jpeg";
 import willowwhiskey from "../assets/images/willowwhiskey.jpeg"; 
 import bob from "../assets/images/bob.jpeg";
 import mapleswindow from "../assets/images/mapleswindow.jpeg";
 import mittens from "../assets/images/mittens.jpg";
 import misty from "../assets/images/misty.jpg";
 
+const pets = [
+  {
+    name: "Edna",
+    image: edna,
+    alt: "Edna the cat",
+    description: "Enjoying some sunshine during a home visit."
+  },
+
+  {
+    name: "Chocco",
+    image: chocco,
+    alt: "Chocco the Shih Tzu",
+    description: "Balcony pats during a boarding stay at my home."
+  },
+
+  {
+    name: "Maples",
+    image: mapleswindow,
+    alt: "A cat inside a window",
+    description: "Please don't go!"
+  },
+
+  {
+    name: "Mia",
+    image: mia,
+    alt: "Mia the dog",
+    description:
+      "Getting ready to stick her little nose out of the car window, safety first!"
+  },
+
+  {
+    name: "Willow & Whiskey",
+    image: willowwhiskey,
+    alt: "Two foster kittens",
+    description: "Foster Kittens"
+  },
+
+  {
+    name: "Roger, Rosie & Archer",
+    image: rogerRosieArcher,
+    alt: "Three dogs",
+    description: "The Three Musketeers"
+  },
+
+  {
+    name: "Mittens",
+    image: mittens,
+    alt: "Mittens the cat",
+    description: "On the 'Not so' naughty step for this Princess"
+  },
+
+  {
+    name: "Bob",
+    image: bob,
+    alt: "Bob the dog",
+    description: "Home visit poses featuring Bob"
+  },
+
+  {
+    name: "Misty",
+    image: misty,
+    alt: "Misty the cat",
+    description: "A little darling Maine Coon–Siamese cross"
+  }
+];
+
 
 function Gallery() {
   return (
-    <section id="gallery" className="gallery">
-      <div className="container">
-        <h2>Happy Pets</h2>
+      <div className="gallery-grid">
 
-        <p className="gallery-subtitle">
-          A few of the wonderful pets I've had the pleasure of caring for.
-        </p>
+  {pets.map((pet) => (
 
-        <div className="gallery-grid">
+    <div className="gallery-card" key={pet.name}>
 
-          {/* Edna */}
-          <div className="gallery-card">
-            <img src={edna} alt="Edna the cat" />
-            <h3>Edna</h3>
-            <p>Enjoying some sunshine during a home visit.</p>
-          </div>
+      <img
+        src={pet.image}
+        alt={pet.alt}
+      />
 
-          {/* Chocco */}
-          <div className="gallery-card">
-            <img src={chocco} alt="Chocco the Shih Tzu" />
-            <h3>Chocco</h3>
-            <p>
-              Balcony pats during a boarding stay at my home.
-            </p>
-          </div>
+      <h3>{pet.name}</h3>
 
-          {/* maples in window */}
-          <div className="gallery-card">
-            <img src={mapleswindow} alt="a cat inside the window" />
-            <h3>Maples</h3>
-            <p>Please don't go!</p>
-          </div>
+      <p>{pet.description}</p>
 
-          {/* Mia */}
-           <div className="gallery-card">
-            <img src={mia} alt="Mia the dog" />
-            <h3>Mia</h3>
-            <p>Getting ready to stick her little nose out of the car window, safety first!</p>
-          </div>
+    </div>
 
-          {/* Willow Whiskey */}
-          <div className="gallery-card">
-            <img src={willowwhiskey} alt="two kittens" />
-            <h3>Willow & Whiskey</h3>
-            <p>Foster Kittens</p>
-          </div>
+  ))}
 
-          {/* Roger, Rosie and Archer */}
-          <div className="gallery-card">
-            <img src={rra} alt="Roger, Rosie and Archer, three dogs" />
-            <h3>Roger, Rosie and Archer</h3>
-            <p> The Three Musketeers</p>
-          </div>
-
-          {/* mittens */}
-          <div className="gallery-card">
-            <img src={mittens} alt="a cat" />
-            <h3>Mittens</h3>
-            <p>On the 'Not so' naughty step for this Princess</p>
-          </div>
-
-          {/* bob */}
-          <div className="gallery-card">
-            <img src={bob} alt="a dog" />
-            <h3>Bob</h3>
-            <p>Home visit poses featuring Bob</p>
-          </div>
-
-          {/* misty */}
-          <div className="gallery-card">
-            <img src={misty} alt="a cat" />
-            <h3>Misty</h3>
-            <p>A little darling Maine Coon-Siamese cross</p>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
+</div>
   );
 }
 
