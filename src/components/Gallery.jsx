@@ -38,7 +38,7 @@ function Gallery() {
               Balcony pats during a boarding stay at my home.
             </p>
           </div>
-          
+
           {/* maples in window */}
           <div className="gallery-card">
             <img src={mapleswindow} alt="a cat inside the window" />
@@ -53,13 +53,6 @@ function Gallery() {
             <p>Getting ready to stick her little nose out of the car window, safety first!</p>
           </div>
 
-          {/* Roger, Rosie and Archer */}
-          <div className="gallery-card">
-            <img src={rra} alt="Roger, Rosie and Archer, three dogs" />
-            <h3>Roger, Rosie and Archer</h3>
-            <p> The Three Musketeers</p>
-          </div>
-
           {/* Willow Whiskey */}
           <div className="gallery-card">
             <img src={willowwhiskey} alt="two kittens" />
@@ -67,12 +60,11 @@ function Gallery() {
             <p>Foster Kittens</p>
           </div>
 
-
-          {/* bob */}
+          {/* Roger, Rosie and Archer */}
           <div className="gallery-card">
-            <img src={bob} alt="a dog" />
-            <h3>Bob</h3>
-            <p>Home visit poses</p>
+            <img src={rra} alt="Roger, Rosie and Archer, three dogs" />
+            <h3>Roger, Rosie and Archer</h3>
+            <p> The Three Musketeers</p>
           </div>
 
           {/* mittens */}
@@ -80,6 +72,13 @@ function Gallery() {
             <img src={mittens} alt="a cat" />
             <h3>Mittens</h3>
             <p>to write</p>
+          </div>
+
+          {/* bob */}
+          <div className="gallery-card">
+            <img src={bob} alt="a dog" />
+            <h3>Bob</h3>
+            <p>Home visit poses</p>
           </div>
 
           {/* misty */}
