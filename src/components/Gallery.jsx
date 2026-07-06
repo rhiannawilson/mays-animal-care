@@ -71,14 +71,14 @@ function Gallery() {
           <div className="gallery-card">
             <img src={mittens} alt="a cat" />
             <h3>Mittens</h3>
-            <p>On the 'not so' naughty step for this princess</p>
+            <p>On the 'Not so' naughty step for this Princess</p>
           </div>
 
           {/* bob */}
           <div className="gallery-card">
             <img src={bob} alt="a dog" />
             <h3>Bob</h3>
-            <p>Home visit posing by Bob</p>
+            <p>Home visit poses featuring Bob</p>
           </div>
 
           {/* misty */}
