@@ -43,7 +43,7 @@
 
 .gallery-card img {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    height: 380px;
     object-fit: cover;
     object-position: center;
     display: block;

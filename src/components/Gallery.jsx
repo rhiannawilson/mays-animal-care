@@ -15,21 +15,21 @@ const pets = [
     name: "Edna",
     image: edna,
     alt: "Edna the cat",
-    description: "Enjoying some sunshine during a home visit."
+    description: "Home Visits"
   },
 
   {
     name: "Chocco",
     image: chocco,
     alt: "Chocco the Shih Tzu",
-    description: "Balcony pats during a boarding stay at my home."
+    description: "Overnight Boarding"
   },
 
   {
     name: "Maples",
     image: mapleswindow,
     alt: "A cat inside a window",
-    description: "Please don't go!"
+    description: "Home Visits"
   },
 
   {
@@ -37,42 +37,42 @@ const pets = [
     image: mia,
     alt: "Mia the dog",
     description:
-      "Getting ready to stick her little nose out of the car window, safety first!"
+      "Dog Walking"
   },
 
   {
     name: "Willow & Whiskey",
     image: willowwhiskey,
     alt: "Two foster kittens",
-    description: "Foster Kittens"
+    description: "Foster Kitten Care"
   },
 
   {
     name: "Roger, Rosie & Archer",
     image: rogerRosieArcher,
     alt: "Three dogs",
-    description: "The Three Musketeers"
+    description: "Multi-dog household care"
   },
 
   {
     name: "Mittens",
     image: mittens,
     alt: "Mittens the cat",
-    description: "On the 'Not so' naughty step for this Princess"
+    description: "Home Visits"
   },
 
   {
     name: "Bob",
     image: bob,
     alt: "Bob the dog",
-    description: "Home visit poses featuring Bob"
+    description: "Home Visits"
   },
 
   {
     name: "Misty",
     image: misty,
     alt: "Misty the cat",
-    description: "A little darling Maine Coon–Siamese cross"
+    description: "Home Visits"
   }
 ];
 
