@@ -1,6 +1,12 @@
 .gallery {
-  padding: 2220px 0;
+  padding: 120px 0;
   background: #ffffff;
+}
+
+.gallery .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .gallery h2 {
@@ -16,24 +22,45 @@
   line-height: 1.7;
 }
 
-/* Gallery Slider */
+/* ===========================
+   Gallery Slider
+=========================== */
 
 .gallery-slide {
-  max-width: 700px;
+  max-width: 100%;
   margin: auto;
   text-align: center;
 }
 
-.gallery-slide img {
+.photo-frame {
+  background: var(--sage);
+  padding: 30px;
+  border-radius: 28px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  justify-content: center;
+}
+
+.photo-frame img {
   width: 100%;
-  max-height: 650px;
+  max-width: 540px;
+
+  display: block;
+
+  background: white;
+
+  padding: 24px 24px 40px 24px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+
   object-fit: contain;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,.12);
 }
 
 .gallery-slide h3 {
-  margin-top: 25px;
+  margin-top: 22px;
   font-size: 2rem;
 }
 
@@ -41,73 +68,162 @@
   margin-top: 10px;
   color: #666;
   line-height: 1.7;
+  padding-bottom: 20px;
 }
 
-/* Individual Card */
+/* ===========================
+   Swiper Navigation
+=========================== */
 
-.gallery-card {
-  background: #fff;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+.swiper {
+  --swiper-navigation-color: #444;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+
+  width: 58px !important;
+  height: 58px !important;
+
+  background: white;
+  padding: 16px;
+  border-radius: 50%;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+
   transition: all .3s ease;
 }
 
-.gallery-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+
+  transform: scale(1.08);
+
+  box-shadow: 0 15px 30px rgba(0,0,0,.2);
 }
 
-/* Image */
+.swiper-button-prev::after,
+.swiper-button-next::after {
 
-.gallery-card img {
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+  font-size: 22px !important;
+
+  font-weight: 700;
 }
 
-/* Text */
+/* Position arrows */
 
-.gallery-card h3 {
-  margin: 20px 20px 8px;
-  font-size: 1.6rem;
+.swiper-button-prev {
+  left: 40px !important;
 }
 
-.gallery-card p {
-  margin: 0 20px 25px;
-  color: #666;
-  line-height: 1.6;
+.swiper-button-next {
+  right: 40px !important;
 }
 
-.gallery .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 30px;
+/* ===========================
+   Pagination
+=========================== */
+
+.swiper-pagination {
+
+  position: relative !important;
+
+  margin-top: 35px !important;
 }
 
-/* Tablet */
+.swiper-pagination-bullet {
+
+  width: 12px !important;
+  height: 12px !important;
+
+  background: #d8d4c8 !important;
+
+  opacity: 1 !important;
+
+  margin: 0 6px !important;
+
+  border-radius: 50%;
+
+  transition: all .3s ease;
+}
+
+.swiper-pagination-bullet-active {
+
+  width: 28px !important;
+
+  border-radius: 999px;
+
+  background: var(--sage) !important;
+}
+
+/* ===========================
+   Tablet
+=========================== */
 
 @media (max-width: 992px) {
 
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .photo-frame {
+    padding: 25px;
+  }
+
+  .swiper-button-prev {
+    left: 20px !important;
+  }
+
+  .swiper-button-next {
+    right: 20px !important;
   }
 
 }
 
-/* Mobile */
+/* ===========================
+   Mobile
+=========================== */
 
 @media (max-width: 768px) {
 
   .gallery {
-    padding: 70px 0;
+    padding: 80px 0;
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
+  .gallery .container {
+    padding: 0 20px;
+  }
+
+  .photo-frame {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .photo-frame img {
+    padding: 18px 18px 30px;
+  }
+
+  .gallery-slide h3 {
+    font-size: 1.7rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+
+    font-size: 18px !important;
+  }
+
+  .swiper-button-prev {
+    left: 10px !important;
+  }
+
+  .swiper-button-next {
+    right: 10px !important;
   }
 
 }

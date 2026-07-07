@@ -93,17 +93,18 @@ function Gallery() {
   spaceBetween={40}
   slidesPerView={1}
 >
-
   {pets.map((pet) => (
 
     <SwiperSlide key={pet.name}>
 
       <div className="gallery-slide">
 
-        <img
-          src={pet.image}
-          alt={pet.alt}
-        />
+        <div className="photo-frame">
+          <img
+            src={pet.image}
+            alt={pet.alt}
+          />
+        </div>
 
         <h3>{pet.name}</h3>
 
@@ -114,7 +115,6 @@ function Gallery() {
     </SwiperSlide>
 
   ))}
-
 </Swiper>
      
   );
