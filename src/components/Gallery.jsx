@@ -1,4 +1,11 @@
 import "../styles/Gallery.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { Navigation, Pagination } from "swiper/modules";
 
 import edna from "../assets/images/edna.jpg";
 import chocco from "../assets/images/chocco.jpeg";
@@ -79,26 +86,37 @@ const pets = [
 
 function Gallery() {
   return (
-      <div className="gallery-grid">
+<Swiper
+  modules={[Navigation, Pagination]}
+  navigation
+  pagination={{ clickable: true }}
+  spaceBetween={40}
+  slidesPerView={1}
+>
 
   {pets.map((pet) => (
 
-    <div className="gallery-card" key={pet.name}>
+    <SwiperSlide key={pet.name}>
 
-      <img
-        src={pet.image}
-        alt={pet.alt}
-      />
+      <div className="gallery-slide">
 
-      <h3>{pet.name}</h3>
+        <img
+          src={pet.image}
+          alt={pet.alt}
+        />
 
-      <p>{pet.description}</p>
+        <h3>{pet.name}</h3>
 
-    </div>
+        <p>{pet.description}</p>
+
+      </div>
+
+    </SwiperSlide>
 
   ))}
 
-</div>
+</Swiper>
+     
   );
 }
 
